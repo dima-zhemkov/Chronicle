@@ -8,7 +8,6 @@ namespace Chronicle
         Type Type { get; }
         SagaStates State { get; }
         object Data { get; }
-        uint Revision { get; }
         void Update(SagaStates state, object data = null);
     }
 }
